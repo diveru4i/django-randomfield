@@ -1,0 +1,8 @@
+.token_field {
+    min-width: 250px;
+}
+
+.token_button {
+    min-width: 70px;
+    margin-left: 5px;
+}
