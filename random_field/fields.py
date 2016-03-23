@@ -17,7 +17,7 @@ class TokenWidget(forms.Widget):
 
     def render(self, name, value, attrs=None):
         max_length = self.max_length
-        return render_to_string('token_field/token.html', locals())
+        return render_to_string('random_field/token.html', locals())
 
 
 class TokenField(models.CharField):
@@ -28,6 +28,6 @@ class TokenField(models.CharField):
 
 try:
     from south.modelsinspector import add_introspection_rules
-    add_introspection_rules([], ["^token_field\.fields\.RandomField"])
+    add_introspection_rules([], ["^random_field\.fields\.TokenField"])
 except ImportError:
     pass
