@@ -17,6 +17,7 @@ class TokenWidget(forms.Widget):
 
     def render(self, name, value, attrs=None):
         max_length = self.max_length
+        input_width = self.max_length * 5
         return render_to_string('random_field/token.html', locals())
 
 
